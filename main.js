@@ -21,11 +21,11 @@ days.forEach(day => {
             
             if (showImage === "true") {
                 messageImage.src = imageUrl;
-                messageImage.style.display = 'block';
+                messageImage.style.display = "block";
             } else {
-                messageImage.style.display = 'none';
+                messageImage.style.display = "none";
             }
-            modal.style.display = 'flex'; 
+            modal.style.display = "flex"; 
         
         } else {
             alert("You can't open future dates SMH cheater tsk tsk SHAME!");
