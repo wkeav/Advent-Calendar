@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="x-UA-Compatible" content="ie=edge"/>
+    <title>Advent Calendar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 class="header">Calendar <img src="Christmas-Tree.jpg" id="christmas-tree"></h1>
+    <div class="snowflake"></div>
+    <div class="calendar">
+
+
+
+        <div class="day" data-day="13" data-date="2023-11-13" data-message="" data-image="catwrose.jpg" data-show-image="true">13</div>
+        <div class="day" data-day="14" data-date="2023-11-14" data-message=" " data-image="" data-show-image="false">14</div>
+        <div class="day" data-day="15" data-date="2023-11-15"  data-image="" data-show-image="false">15</div>
+        <div class="day" data-day="16" data-date="2023-11-16" data-message="" data-image="music1.png" data-show-image="true">16</div>
+        <div class="day" data-day="17" data-date="2023-11-17" data-message=" " data-image="" data-show-image="false">17</div>
+        <div class="day" data-day="18" data-date="2023-11-18" data-message="" data-image="" data-show-image="">18</div> 
+        <div class="day" data-day="19" data-date="2023-11-19" data-message="  " data-image="" data-show-image="false">19</div>
+        <div class="day" data-day="20" data-date="2023-11-20" data-message="" data-image="" data-show-image="false">20</div>
+        <div class="day" data-day="21" data-date="2023-11-21" data-message="" data-image="" data-show-image="false">21</div>
+        <div class="day" data-day="22" data-date="2023-11-22" data-message="" data-image="" data-show-image="true">22</div>
+        <div class="day" data-day="23" data-date="2022-11-23" data-message=""  data-image="" data-show-image="false">23</div>
+        <div class="day" data-day="24" data-date="2022-11-24" data-message="Merry Christmas from Astra all the way 35.0078N, 97.0929W from Earth...not from Mar sadly" data-image="christmas1.jpg" data-show-image="true">24</div>
+  
+    </div>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <p id="message"></p>
+        <img  alt="Image" id="messageImage"> 
+           
+        </div>
+    </div>
+
+    <div class="game-modal" id="gameModal">
+        <div class="modal-content1">
+            <span class="close-btn1" id="closeGameBtn">&times;</span>
+            <p id="gameMessage" >Guess the Mystery Correct Number Zoe!</p>
+            <input type="number" id="userGuess" max="10" min="1" placeholder="Enter number here">
+            <button id="submitGuessBtn"> Submit </button>
+        </div>
+    </div>
+    <div class="game-modal2" id="memoryGameModal">
+        <div class="modal-content2">
+            <span class="close-btn2" id="closeMemoryGameBtn">&times;</span>
+            <p id="memoryGameMessage">Memory Match Game! ( i got lazy and only did one matching....i'll do better nxt year I promise)!</p>
+            <div id="memoryGameBoard"></div>
+        </div>
+    </div>
+
+
+        <iframe style="border-radius:30px" id="music" src="https://open.spotify.com/embed/playlist/05SpaGie73gEpbNwmDKMnr?utm_source=generator" width="50%" height="375" frameBorder="" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+    <script src="main.js"></script>
+</body>
+</html>
