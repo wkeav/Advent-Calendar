@@ -3,7 +3,7 @@ const modal = document.getElementById("modal");
 const closeBtn = document.getElementById("closeBtn");
 const message = document.getElementById("message");
 const messageImage = document.getElementById("messageImage");
-
+// Allows the calendar to be advent 
 days.forEach(day => {
     day.addEventListener("click", function() {
         const dayDate = this.getAttribute("data-date");
@@ -18,7 +18,7 @@ days.forEach(day => {
             
             message.textContent = ` ${dayMessage}`;
 
-            
+         //some day can be images, or messages    
             if (showImage === "true") {
                 messageImage.src = imageUrl;
                 messageImage.style.display = "block";
